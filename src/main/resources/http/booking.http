@@ -1,0 +1,56 @@
+### POST
+POST localhost:8080/api/bookings
+Content-Type: application/json
+
+ {
+   "checkInDate": "2023-11-12",
+   "checkOutDate": "2023-11-20",
+   "bookingPrice": "1000",
+   "status": "CONFIRMED",
+   "description": "City",
+   "bookingId": 1
+}
+
+### GET
+GET localhost:8080/api/bookigs
+Content-Type: application/json
+
+{
+  "checkInDate" : "2023-04-01",
+  "checkOutDate" : "2023-05-10",
+  "bookingPrice" : "100,00",
+  "status" : "CONFIRMED"
+}
+
+### DELETE
+DELETE localhost:8080/api/bookings/16
+Content-Type: application/json
+
+{
+  "checkInDate" : "2023-01-01",
+  "checkOutDate" : "2023-01-10",
+  "bookingPrice" : "100,00",
+  "status" : "CONFIRMED"
+}
+
+###GET BOOKING-ID
+GET localhost:8080/api/bookings/1
+Content-Type: application/json
+
+{
+  "checkInDate" : "2023-01-01",
+  "checkOutDate" : "2023-01-10",
+  "bookingPrice" : "100,00",
+  "status" : "CONFIRMED",
+  "description": "Home",
+  "apartment_id": 1
+
+}
+
+### POST
+POST localhost:8080/api/apartments/5/bookings
+Content-Type: application/json
+
+{
+  "bookingId": 5
+}

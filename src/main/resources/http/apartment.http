@@ -1,0 +1,73 @@
+
+### Post NR.1,2
+POST localhost:8080/api/apartments
+Content-Type: application/json
+
+{
+  "type": "Home",
+  "description": "City",
+  "address": "Hoho,1,12345,Berlin",
+  "numberOfRooms": 1,
+  "state": "CONFIRMED"
+}
+
+### Post NR.3
+POST localhost:8080/api/apartments
+Content-Type: application/json
+
+{
+  "type": "Apartment",
+  "description": "City",
+  "address": "Holunder,2,23456,Bonn",
+  "numberOfRooms": 2,
+  "state": "CONFIRMED"
+}
+
+### Add apartments
+
+GET localhost:8080/api/apartments
+Content-Type: application/json
+
+{
+  "type": "Home",
+  "description": "in City",
+  "address": "Berlin",
+  "numberOfRooms": 1,
+  "state": "CONFIRMED"
+}
+
+### GET APARTMENT-ID
+GET localhost:8080/api/apartments/7
+Content-Type: application/json
+
+{
+  "type": "Home",
+  "description": "in City",
+  "address": "Berlin",
+  "numberOfRooms": "1",
+  "bookingId": "1",
+  "personId": "1",
+  "apartmentId": 7
+}
+
+### PUT Obnovlenija
+PUT localhost:8080/api/apartments/1
+Content-Type: application/json
+
+{
+  "type": "Home",
+  "description": "in City",
+  "address": "Berlin",
+  "numberOfRooms": 1
+}
+
+### DELETE
+DELETE localhost:8080/api/apartments/1
+Content-Type: application/json
+
+{
+  "type": "Home",
+  "description": "in City",
+  "address": "Berlin",
+  "numberOfRooms": 1
+}

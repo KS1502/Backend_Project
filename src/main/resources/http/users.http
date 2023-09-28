@@ -1,0 +1,31 @@
+### Registration  GUEST
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{ "email": "example@mail.com",
+  "password": "Qwerty123!"
+}
+
+### Registration Manager
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "email": "manager@gmail.com",
+  "password": "Manager123!"
+}
+
+### Registration Admin
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "Admin123!"
+}
+
+
+###Get my profile
+GET http://localhost:8080/api/users/my
